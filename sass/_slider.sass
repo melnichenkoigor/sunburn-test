@@ -1,0 +1,65 @@
+.slider
+	min-height: 400px
+	background-color: #f9f9f9
+	text-align: center
+	position: relative
+	margin: 0 auto
+	.slides
+		text-align: center
+		width: 1248px
+		margin: 0 auto
+		position: relative
+		min-height: 462px	
+		img
+			position: absolute
+			left: 0
+			opacity: 0
+			transition: 1s
+		.showed
+			opacity: 1	
+	.buttons
+		.button-left
+			position: absolute
+			top: 50%
+			left: 20px
+			width: 20px
+			height: 40px
+			z-index: 1
+			&:hover
+				background-color: rgba(0,0,0,.3)
+			.prev
+				cursor: pointer
+				height: 15px
+				width: 15px
+				border-left: 2px solid $color			
+				border-bottom: 2px solid $color
+				transform: rotate(45deg)
+				position: absolute
+				top: 10px
+				left: 5px
+				z-index: 2
+		.button-right
+			position: absolute
+			top: 50%
+			right: 20px
+			width: 20px
+			height: 40px
+			z-index: 1
+			&:hover
+				background-color: rgba(0,0,0,.3)
+			.next
+				cursor: pointer
+				height: 15px
+				width: 15px
+				border-left: 2px solid $color			
+				border-bottom: 2px solid $color
+				transform: rotate(225deg)
+				position: absolute
+				top: 10px
+				right: 5px
+				z-index: 2	
+
+					
+
+
+		
